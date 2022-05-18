@@ -170,7 +170,7 @@ class Motion {
 
 		$dist = $entity->getPosition()->distanceSquared($target->getPosition());
 
-		if (!$target->isAlive() or $dist >= 200 or ($target instanceof Player and $target->isCreative() == true)) {
+		if (!$target->isAlive() or $dist >= 50 or ($target instanceof Player and $target->isCreative() == true)) {
 			$entity->setMovementSpeed(1.00);
 			$entity->setTargetEntity(null);
 			return;
