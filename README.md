@@ -1,3 +1,41 @@
+*BetterMobs*
+⚠️ **__Need contributor or help to fix:__**
+
+⚪️ **__End:__**
+- Add Boss Bar (EnderDragon)👈
+- LookAtTarget (EnderDragon)👈
+- Die with animation (EnderDragon)👈
+- Bow/Arrow Damages (EnderDragon)👈
+- Experience drop on die (EnderDragon)👈
+- Attack & Good comportment (EnderDragon)👈
+⚪️ **__OverWorld:__**
+- Add Spawn of Iron/SnowGolem (with block)👈
+- Breeding Animals👈
+- Tamed Animals👈
+- Baby Animals👈
+- Baby Zombie👈
+- Explosion Creeper:  (i have the pm3 code but idk how to update it on pm4)👈
+⚪️ **__Global__** *(Nether-End-Overworld)*
+- Fix Jump: Because actually all mobs can ClimbWall.👈
+- Set just Spider must ClimbWall.👈
+- Fix mobs gravity👈
+- All mobs Movement water (can float) 👈
+- Equipments Mobs 
+- Crossbow Piglin👈
+- Gold Sword Zombie Pigman👈
+- Stone Sword Wither Skeleton👈
+- Armor, shovel, sword👈
+Zombie skeleton etc…
+- Bow Skeleton 
+- Increase Distance Attack: Skeleton, Ghast, Blaze, Piglin:
+- Skeleton Arrow (Bow)👈
+- Blaze: small_fire_ball👈
+- Ghast: large_fireball 👈
+- Piglin: arrow (Crossbow)👈
+- Phantom attack & good comportment👈
+
+More…
+
 # BetterMobsOverworld
 BetterMobs is a plugin Remixed, by MadoxMC, the original plugin is maked by tgwaste.
 MadoxMC Just Edited This plugin to Make 3 Compatible Plugins to add Mobs on your Overworld Worlds, NetherWorlds &amp; EndWorlds, 
