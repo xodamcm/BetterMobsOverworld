@@ -7,6 +7,8 @@ use pocketmine\entity\Living;
 use pocketmine\event\entity\{
     EntityDamageByEntityEvent, EntityDamageEvent
 };
+use pocketmine\network\mcpe\protocol\types\entity\EntityMetadataCollection;
+use pocketmine\network\mcpe\protocol\types\entity\EntityMetadataProperties;
 use pocketmine\item\enchantment\Enchantment;
 use pocketmine\item\Item;
 use pocketmine\nbt\tag\{
@@ -26,11 +28,12 @@ class Rabbit extends MobsEntity {
 	
     public function initEntity(CompoundTag $nbt) : void{
         $this->setMaxHealth(3);
+        $this->setVariant(mt_rand(0, 3));
 	 $this->setMovementSpeed(0.8);
         parent::initEntity($nbt);
     }
 
-    public function getDrops(): array{
+    /**public function getDrops(): array{
         $lootingL = 1;
         $cause = $this->lastDamageCause;
         if($cause instanceof EntityDamageByEntityEvent){
@@ -51,7 +54,20 @@ class Rabbit extends MobsEntity {
         }
 
         return $drops;
-    }
+    }*/
+    
+	public function setVariant(int $variant = 0): void {
+		if($variant > 2 && $variant < 0){
+			$variant = 0;
+		}
+		$this->variant = $variant;
+		$this->networkPropertiesDirty = true;
+	}
+	
+	protected function syncNetworkData(EntityMetadataCollection $properties) : void{
+		parent::syncNetworkData($properties);
+		$properties->setInt(EntityMetadataProperties::VARIANT, $this->variant);
+	}
 
     public function getXpDropAmount(): int
     {
