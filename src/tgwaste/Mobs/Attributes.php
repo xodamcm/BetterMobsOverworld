@@ -14,20 +14,15 @@ class Attributes {
 	}
 
 	public function isSwimming(string $name) : bool {
-		return in_array($name, ["Cod", "Dolphin", "ElderGuardian", "PufferFish", "Salmon", "Squid", "TropicalFish", "Axolotl"]);
+		return in_array($name, ["Cod", "Dolphin", "ElderGuardian", "PufferFish", "Salmon", "Squid", "TropicalFish", "Axolotl", "Drowned"]);
 	}
 
 	public function isHostile(string $name) : bool {
 		return in_array($name, [
-			"Blaze", "CaveSpider", "Creeper", "Guardian", "Husk", "Skeleton", "Slime", "Spider", "Stray", "Witch", "Wolf", "Zombie", "ZombieVillager", "Evoker", "Vindicator", "ElderGuardian"
+			"Blaze", "CaveSpider", "Creeper", "Guardian", "Husk", "Skeleton", "Slime", "Spider", "Stray", "Witch", "Wolf", "Zombie", "ZombieVillager", "Evoker", "Vindicator", "ElderGuardian", "Drowned"
 		]);
 	}
 	
-	public function isNonHostile(string $name) : bool {
-		return in_array($name, [
-			"Cow", "Sheep", "Pig", "Fox", "Bee", "Rabbit", "Squid", "TropicalFish", "Horse", "Salmon", "Ocelot", "Parrot", "PufferFish", "Donkey", "Dolphin", "Cat", "Chicken", "Cod", "Bat", "Axolotl", "Goat"
-		]);
-	}
 	
 	//public function isNetherMob(string $name) : bool {
 		//return in_array($name, ["Blaze", "Chicken", "Enderman", "Ghast", "MagmaCube", "Skeleton", "Slime"]);
