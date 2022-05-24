@@ -58,6 +58,7 @@ use tgwaste\Mobs\Entities\Witch;
 use tgwaste\Mobs\Entities\Wolf;
 use tgwaste\Mobs\Entities\Zombie;
 use tgwaste\Mobs\Entities\ZombieVillager;
+use tgwaste\Mobs\Entities\Drowned;
 
 class Registrations {
 	public function registerEntities() {
@@ -80,6 +81,7 @@ class Registrations {
 			"Blaze" => Blaze::class,
 			"Cat" => Cat::class,
 			"Goat" => Goat::class,
+			"Drowned" => Drowned::class,
 			"CaveSpider" => CaveSpider::class,
 			"Chicken" => Chicken::class,
 			"Cod" => Cod::class,
