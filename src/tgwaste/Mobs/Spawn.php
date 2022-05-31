@@ -156,6 +156,23 @@ class Spawn {
 			}
 		}
 
+	       foreach ($world->getPlayers() as $player) {
+		   $name = $player->getName();
+		      if ($player->getPosition()->getWorld()->getFolderName() === ("$name")){
+		             return true;
+		 }
+	} 
+	       foreach ($world->getPlayers() as $player) {
+                  $world = $player->getWorld()->getDisplayName();
+                  $name = strtolower($player->getName());
+                  $ex = explode("-", $world);
+                  if($ex[0] == "ai"){
+                  if($ex[1] == $name){
+		             return true;
+	       }
+	}      
+}	              
+
 		return false;
 	}
 }
