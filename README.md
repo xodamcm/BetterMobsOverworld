@@ -3,7 +3,15 @@
 ⚠️ **__Need contributor or help to add:__**
 
 PM5 LINKS:
-https://youtu.be/YzkgtpayMDc
+
+Download Link (PM5): MobsOverworld
+https://poggit.pmmp.io/ci/xodamcm/BetterMobsOverworld-PM5/~
+
+Download Link (PM5): BetterEndMobs
+https://poggit.pmmp.io/ci/xodamcm/BetterMobsEnd-PM5/~
+
+Download Link (PM5): BetterMobsNether
+https://poggit.pmmp.io/ci/xodamcm/BetterMobsNether-PM5/~
 
 PM4: 👇
 
