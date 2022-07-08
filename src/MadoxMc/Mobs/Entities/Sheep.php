@@ -67,7 +67,7 @@ class Sheep extends MobsEntity {
             }
 		}
 		return [
-                    VanillaBlocks::WOOL()->setCount(mt_rand(0, 15), 1 * $lootingL), //TODO: Check proper color
+                   // VanillaBlocks::WOOL()->setCount(mt_rand(0, 1 * $lootingL)), //TODO: Check proper color
 		    VanillaItems::RAW_MUTTON()->setCount(mt_rand(1, 2 * $lootingL)),
 		];
 	}
