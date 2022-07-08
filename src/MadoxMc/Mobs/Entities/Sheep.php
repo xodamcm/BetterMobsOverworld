@@ -26,6 +26,7 @@ use pocketmine\entity\EntitySizeInfo;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
 use pocketmine\item\VanillaItems;
+use pocketmine\block\VanillaBlocks;
 use pocketmine\item\ItemFactory;
 use pocketmine\item\ItemIds;
 use pocketmine\data\bedrock\EntityLegacyIds;
@@ -66,7 +67,7 @@ class Sheep extends MobsEntity {
             }
 		}
 		return [
-			VanillaItems::WOOL()->setCount(mt_rand(0, 15), 1 * $lootingL), //TODO: Check proper color
+                    VanillaBlocks::WOOL()->setCount(mt_rand(0, 15), 1 * $lootingL), //TODO: Check proper color
 		    VanillaItems::RAW_MUTTON()->setCount(mt_rand(1, 2 * $lootingL)),
 		];
 	}
