@@ -1,9 +1,8 @@
 name: BetterMobsOverworld
-version: 1.1.0
-main: tgwaste\Mobs\Main
-api: 4.0.0
-author: tgwaste
-editor: MadoxMC
+version: 1.0.0
+main: MadoxMc\Mobs\Main
+api: 5.0.0
+author: MadoxMc
 commands:
   killmobs:
     usage: "/killmobs"
